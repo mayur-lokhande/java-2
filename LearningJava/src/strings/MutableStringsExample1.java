@@ -17,5 +17,8 @@ public class MutableStringsExample1 {
 		s.append(" He is from india");
 		System.out.println(s.capacity());// 34*2+2=70
 		System.out.println(s.length());// 43
+		
+		StringBuffer str2 = new StringBuffer("Rahul");
+		System.out.println(str2.capacity());//initial capacity 16 + passing argument of length 5=21
 	}
 }
