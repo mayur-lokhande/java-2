@@ -8,6 +8,10 @@ public class FifthLargestElement {
 		int[] array = { 10, 20, 30, 40, 50, 60, 70, 80, 90, 100 };
 		int fifthLargest = findFifthLargest(array);
 		System.out.println("The 5th largest element in the array is: " + fifthLargest);
+		/* //In single line
+		Arrays.sort(array);
+		System.out.println(array[array.length-5]);
+		*/
 	}
 
 	public static int findFifthLargest(int[] array) {

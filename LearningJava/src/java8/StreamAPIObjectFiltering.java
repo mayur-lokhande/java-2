@@ -5,68 +5,15 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
 
-class Employee {
-	private int id;
-	private String name;
-	private int age;
-	private long salary;
-
-	public Employee(int id, String name, int age, long salary) {
-		super();
-		this.id = id;
-		this.name = name;
-		this.age = age;
-		this.salary = salary;
-	}
-
-	public int getId() {
-		return id;
-	}
-
-	public void setId(int id) {
-		this.id = id;
-	}
-
-	public String getName() {
-		return name;
-	}
-
-	public void setName(String name) {
-		this.name = name;
-	}
-
-	public int getAge() {
-		return age;
-	}
-
-	public void setAge(int age) {
-		this.age = age;
-	}
-
-	public long getSalary() {
-		return salary;
-	}
-
-	public void setSalary(long salary) {
-		this.salary = salary;
-	}
-
-	@Override
-	public String toString() {
-		return "Employee [id=" + id + ", name=" + name + ", age=" + age + ", salary=" + salary + "]";
-	}
-
-}
-
 public class StreamAPIObjectFiltering {
 
 	public static void main(String[] args) {
 		List<Employee> emp = new ArrayList<>();
-		emp.add(new Employee(205645, "Mayur", 26, 35000));
-		emp.add(new Employee(213425, "Samarth", 23, 50000));
-		emp.add(new Employee(312445, "Ketan", 22, 26000));
-		emp.add(new Employee(113689, "Aakash", 20, 45000));
-		emp.add(new Employee(357698, "Dhiraj", 21, 33000));
+		emp.add(new Employee(205645, "Mayur", 26, 35000,"Pune"));
+		emp.add(new Employee(213425, "Samarth", 23, 50000,"Satara"));
+		emp.add(new Employee(312445, "Ketan", 22, 26000,"Mumbai"));
+		emp.add(new Employee(113689, "Aakash", 20, 45000,"Indapur"));
+		emp.add(new Employee(357698, "Dhiraj", 21, 33000,"Akola"));
 		System.out.println("-----Ordering salary by ascending order-----");
 		List<Employee> sortedBySalary = emp.stream().sorted(new Comparator<Employee>() {
 
@@ -119,7 +66,10 @@ public class StreamAPIObjectFiltering {
 		List<Employee> sorted7 = emp.stream().sorted(Comparator.comparing(Employee::getName).reversed())
 				.collect(Collectors.toList());
 		System.out.println(sorted7);
-
+		
+		System.out.println("=======Pune Location Employees=======");
+		List<Employee> list = emp.stream().filter((employee)->employee.getLocation().contains("Pune")).collect(Collectors.toList());
+		System.out.println(list);
 	}
 
 }
