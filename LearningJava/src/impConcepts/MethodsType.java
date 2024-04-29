@@ -1,6 +1,6 @@
-package basics;
+package impConcepts;
 
-public class MethodsTpye {
+public class MethodsType {
 //	Method which accept parameters and has a return type
 	public int add(int a, int b) {
 		return a + b;
@@ -22,7 +22,7 @@ public class MethodsTpye {
 	}
 
 	public static void main(String[] args) {
-		MethodsTpye mt = new MethodsTpye();
+		MethodsType mt = new MethodsType();
 		System.out.println(mt.add(10, 20));
 		mt.printMessage("Hello!");
 		System.out.println(mt.getRandomNumber());

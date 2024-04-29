@@ -1,4 +1,4 @@
-package basics;
+package impConcepts;
 
 class MobilePhone{
 	String brand;

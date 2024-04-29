@@ -1,4 +1,4 @@
-package basics;
+package impConcepts;
 
 public class VariablesExample {
 int number; //Instance Variable
