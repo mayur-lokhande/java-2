@@ -9,7 +9,7 @@ static float i; //Static Variable
 		
 		VariablesExample v=new VariablesExample();
 		System.out.println(v.number); //instance variable can have default values
-		System.out.println(v.i); //static variable also can have default values
+		System.out.println(VariablesExample.i); //static variable also can have default values
 	}
 
 }
