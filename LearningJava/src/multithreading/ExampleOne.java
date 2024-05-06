@@ -24,6 +24,12 @@ public class ExampleOne {
 		
 		ClassTwo classTwo=new ClassTwo();
 		classTwo.start();
+		
+//		classOne.setPriority(Thread.MIN_PRIORITY); //1
+//		classOne.setPriority(Thread.NORM_PRIORITY);//5
+//		classOne.setPriority(Thread.MAX_PRIORITY); //10
+		
+		System.out.println(Thread.NORM_PRIORITY);
 	}
 
 }
