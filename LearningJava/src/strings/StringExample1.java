@@ -8,5 +8,9 @@ public class StringExample1 {
 		s2 = s1;
 		System.out.println(s1);// Rama
 		System.out.println(s2);// Rama
+		
+		String str2=new String("mayur");
+		String str1="mayur";
+		System.out.println(str1==str2);
 	}
 }
