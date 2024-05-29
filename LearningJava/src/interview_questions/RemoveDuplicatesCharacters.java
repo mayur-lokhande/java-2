@@ -3,7 +3,7 @@ package interview_questions;
 import java.util.LinkedHashSet;
 import java.util.Set;
 
-public class RemoveDuplicates {
+public class RemoveDuplicatesCharacters {
     public static void main(String[] args) {
         String input = "programming";
 
