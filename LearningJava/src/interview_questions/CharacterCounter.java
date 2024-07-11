@@ -13,6 +13,7 @@ public class CharacterCounter {
 		HashMap<Character, Integer> count = new HashMap<>();
 		char arr[] = str.toCharArray();
 
+		//ignore white spaces
 		for (char c : arr) {
 			if (c != ' ') {
 				if (count.containsKey(c)) {
