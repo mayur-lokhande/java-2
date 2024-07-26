@@ -7,7 +7,7 @@ public class CharacterCounter {
 
 	public static void main(String[] args) {
 
-		String str = "Today is beautiful day";
+		String str = "My name is Mayur";
 
 		// declare a HashMap
 		HashMap<Character, Integer> count = new HashMap<>();
