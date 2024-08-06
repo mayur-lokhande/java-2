@@ -15,7 +15,7 @@ public class StreamAPIExample {
 		employee.add(new Employee(576, "Satish Pawar", 21, 24500, "Hyderabad"));
 		employee.add(new Employee(733, "Pavan Kumar", 34, 85000, "Pune"));
 		employee.add(new Employee(671, "Sudhanshu Gupta", 29, 57000, "Noida"));
-		employee.add(new Employee(912, "Atish Kumar Verma", 19, 22000, "Banglore"));
+		employee.add(new Employee(912, "Aakash Kumar", 19, 22000, "Banglore"));
 		employee.add(new Employee(355, "Tushar Zagade", 28, 66000, "Kolkata"));
 		employee.add(new Employee(777, "Shantanu Sinha", 44, 145000, "Mumbai"));
 
