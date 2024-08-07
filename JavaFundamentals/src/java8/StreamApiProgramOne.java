@@ -42,10 +42,18 @@ public class StreamApiProgramOne {
 		// Find the employee with the maximum salary using method references
 		Optional<Employee> res1 = list.stream().max(Comparator.comparingDouble(Employee::getSalary));
 		System.out.println(res1);
-		
-		//Convert all first names in a list to uppercase
-		List<String> result3 = list.stream().map((e)->e.getFirstName().toUpperCase()).collect(Collectors.toList());
+
+		// Convert all first names in a list to uppercase
+		List<String> result3 = list.stream().map((e) -> e.getFirstName().toUpperCase()).collect(Collectors.toList());
 		System.out.println(result3);
+
+		// find any element from list
+		Optional<Employee> any = list.stream().findAny();
+		System.out.println(any);
+
+		// find first element from list
+		Optional<Employee> first = list.stream().findFirst();
+		System.out.println(first);
 	}
 
 }

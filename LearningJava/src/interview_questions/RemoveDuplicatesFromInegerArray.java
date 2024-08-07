@@ -5,7 +5,7 @@ import java.util.HashSet;
 public class RemoveDuplicatesFromInegerArray {
 
 	public static void main(String[] args) {
-		int[] arr= {1,2,1,3,2,4};
+		int[] arr= {1,2,1,3,2,4,7,8,3};
 		FindDuplicates(arr);
 	}
 	public static void FindDuplicates(int[] array) {
@@ -17,7 +17,8 @@ public class RemoveDuplicatesFromInegerArray {
 				duplicates.add(n);
 			}
 		}
-		System.out.println(duplicates);
+		System.out.println("Integer Array without duplicates: "+seen);
+		System.out.println("Duplicates are: "+duplicates);
 	}
 
 }
