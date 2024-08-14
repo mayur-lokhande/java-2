@@ -25,19 +25,19 @@ public class RemoveDuplicatesCharacters {
         }
 
         // Construct a new string from the characters in the set
-        StringBuilder sb = new StringBuilder();
-        for (char c : charSet) {
-            sb.append(c);
-        }
-
-        return sb.toString();
-        
-     // Construct a new string from the characters in the set (efficiency matters)
-//        String result = "";
+//        StringBuilder sb = new StringBuilder();
 //        for (char c : charSet) {
-//            result += c;
+//            sb.append(c);
 //        }
 //
-//        return result;
+//        return sb.toString();
+        
+     // Construct a new string from the characters in the set (efficiency matters)
+        String result = "";
+        for (char c : charSet) {
+            result += c;
+        }
+
+        return result;
     }
 }
