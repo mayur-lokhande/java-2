@@ -8,7 +8,7 @@ import java.util.Set;
 import java.util.TreeSet;
 import java.util.stream.Collectors;
 
-public class StreamApiProgramTwo {
+public class StreamApiExampleTwo {
 
 	public static void main(String[] args) {
 		List<Integer> numbers = Arrays.asList(1, 9, 2, 6, 3, 7, 4, 5, 7, 1, 8);

@@ -8,7 +8,7 @@ import java.util.Optional;
 public class StreamMethods {
 
 	public static void main(String[] args) {
-		List<Integer> list = Arrays.asList(3, 8, 4, 1, 9, 11, 4, 2);
+		List<Integer> list = Arrays.asList(14, 8, 4, 1, 9, 11, 4, 2);
 
 		// findFirst
 		Optional<Integer> findFirst = list.stream().findFirst();
