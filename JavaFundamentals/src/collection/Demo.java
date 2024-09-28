@@ -18,13 +18,6 @@ public class Demo {
 		
 		System.out.println(set);
 		
-		Map<String, Integer> tm=new TreeMap<String, Integer>();
-		tm.put("Shine", 45);
-		tm.put("FZ", 2);
-		tm.put("ASD", 15);
-		tm.put("Hunter", 12);
-		tm.put(null, null);
-		
 	}
 
 }

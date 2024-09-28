@@ -1,6 +1,12 @@
-.project
-.classpath
-.settings/
 /.metadata/
+*.class
+.classpath
+.project
+.settings/
 /bin/
-.class
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+*.ipr
