@@ -3,6 +3,7 @@ package java8;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
+import java.util.Map;
 import java.util.Optional;
 import java.util.stream.Collectors;
 
@@ -54,6 +55,14 @@ public class StreamApiExampleOne {
 		// find first element from list
 		Optional<Employee> first = list.stream().findFirst();
 		System.out.println(first);
+		
+		//Sort the employees based on two conditions (age and salary)
+		List<Employee> sortedList = list.stream().sorted(Comparator.comparing(Employee::getAge).thenComparing(Employee::getSalary)).collect(Collectors.toList());
+		System.out.println(sortedList);
+		
+		//Grouping Elements
+		Map<Integer, List<Employee>> grouping = list.stream().collect(Collectors.groupingBy(Employee::getAge));
+		System.out.println(grouping);
 	}
 
 }
